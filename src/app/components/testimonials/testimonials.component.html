@@ -1,0 +1,14 @@
+<section>
+    <app-title
+    label="View Services"
+    title="Words From My Clients"
+    color="Dark"
+    ></app-title>
+
+    <div class="cardSection">
+        <span *ngFor="let card of cardDetails">
+            <app-testimonial-card [data]="card"></app-testimonial-card>
+        </span>
+    </div>
+    
+</section>

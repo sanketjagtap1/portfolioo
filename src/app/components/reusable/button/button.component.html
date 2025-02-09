@@ -1,0 +1,8 @@
+<button
+  class="btn"
+  [class.btnDark]="color === 'Dark'"
+  [class.btnLight]="color !== 'Dark'"
+  (click)="handleClick()"
+>
+  {{ label }}
+</button>

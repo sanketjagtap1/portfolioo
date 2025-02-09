@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import the GeneralSans font */
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../public/assets/Fonts/TTF/GeneralSans-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Semibold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Light.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+  
+  /* Reset and global styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GeneralSans', sans-serif;
+  }
+  
+  /* Body-specific global styles */
+  body {
+    color: #ffffff; /* Set text color to white for dark background */
+    line-height: 1.5; /* Add better readability */
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0; /* Reset margin for better consistency */
+    background: #121212;
+
+  }
+  

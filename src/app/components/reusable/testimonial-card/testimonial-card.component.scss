@@ -1,0 +1,64 @@
+.card {
+    // width: 100%;
+    border-radius: 6px;
+    border: 1px solid #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    position: relative;
+    overflow: visible;
+    width: 400px; /* Set the width of each card */
+    flex-shrink: 0; /* Prevent the cards from shrinking */
+
+    .top {
+      display: flex;
+      align-items: center; /* Ensures the image, name, and designation are vertically aligned */
+      gap: 12px; /* Adds space between the image and text */
+      border-bottom: 1px dashed #3d3d3d;
+      padding: 0px 0px 10px 0px;
+      .left {
+        flex-shrink: 0; /* Prevents the image from shrinking */
+        img {
+          width: 50px; /* Set the desired size of the circular image */
+          height: 50px;
+          border-radius: 50%; /* Makes the image round */
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+  
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertically centers the text next to the image */
+        gap: 4px; /* Adds space between the name and designation */
+  
+        .name {
+          font-size: 16px;
+          font-weight: 500;
+          color: #fff; /* Adjust based on your theme */
+        }
+  
+        .designation {
+          font-size: 14px;
+          font-weight: 200;
+          color: #888; /* Subtle text color for the designation */
+        }
+      }
+    }
+
+    .bottom{
+        p{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0em;
+            line-height: 1.5em;
+            color: #fff; 
+            text-decoration: none;
+            text-transform: none;
+        }
+    }
+  }
+  

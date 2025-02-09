@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust as needed */
+    overflow: hidden;
+    
+    /* Left side with the icon */
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px; /* Adjust size of the icon */
+      height: 52px; /* Adjust size of the icon */
+      border: 1px dashed #3d3d3d;
+      border-radius: 6px;
+    //   gap: 12px;
+      margin-right: 16px; /* Space between icon and text */
+      padding: 8px;
+      img {
+        width: 36px; /* Icon size */
+        height: 36px; /* Icon size */
+      }
+    }
+  
+    /* Right side with stack name and description */
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      
+      .stack-name {
+        font-size: 16px;
+        font-style: normal;
+        margin-bottom: 8px; /* Space between stack name and description */
+        color: #f6f6f6;
+      }
+      
+      .description {
+        font-size: 14px;
+        color: #888888;
+        margin-top: auto; /* Push description to the bottom */
+        line-height: 1.4;
+      }
+    }
+
+  }
+  

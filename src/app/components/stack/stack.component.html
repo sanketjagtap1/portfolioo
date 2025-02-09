@@ -1,0 +1,15 @@
+<section>
+    <app-title
+    label=""
+    title="My Stack"
+    color="Dark"
+    button="false"
+    ></app-title>
+
+    <div class="stackSection">
+        <span *ngFor="let stack of stackDetails">
+            <app-stackcard [data]="stack"></app-stackcard>
+        </span>
+    </div>
+
+</section>

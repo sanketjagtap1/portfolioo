@@ -1,0 +1,37 @@
+.title {
+    padding: 0 0 8px 8px;
+    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+    color: #888888;
+    text-decoration: none;
+    border-bottom: 1px dashed #3d3d3d;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 0 8px 8px;
+    margin-top: 10px;
+  }
+  .socialIcon {
+    width: 25px;
+    svg {
+      width: 18px;
+      height: 100%;
+      display: inline-block;
+      fill: rgb(136, 136, 136);
+      color: rgb(136, 136, 136);
+      flex-shrink: 0;
+    }
+    :hover {
+      fill: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+    }
+  }

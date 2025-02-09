@@ -1,0 +1,49 @@
+.menu {
+    padding: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 0 0px;
+    gap: 8px;
+    
+    
+    a {
+      border: 1px solid rgba(36, 36, 36, 0);
+
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      text-decoration: none;
+      width: 100% !important;
+      svg {
+        width: 14px !important;
+        user-select: none;
+        height: 100%;
+        display: inline-block;
+
+        fill: rgb(136, 136, 136);
+        color: rgb(136, 136, 136);
+        flex-shrink: 0;
+      }
+
+      p {
+        font-size: 14px;
+        color: rgb(136, 136, 136);
+        margin-left: 8px;
+      }
+    }
+    a:hover {
+      background: #1a1a1a;
+      border: 1px solid rgb(36, 36, 36);
+      border-radius: 8px;
+      p {
+        color: rgb(246, 246, 246) !important;
+        background: #1a1a1a;
+      }
+      svg {
+        fill: rgb(246, 246, 246);
+        color: rgb(246, 246, 246);
+        background: #1a1a1a;
+      }
+    }
+  }
