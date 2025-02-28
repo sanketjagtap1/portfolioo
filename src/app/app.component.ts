@@ -1,8 +1,9 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SidebarComponent } from "./components/shared/sidebar/sidebar.component";
 import { NgIf } from '@angular/common';
-import { NavbarComponent } from "./components/shared/navbar/navbar.component";
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+
 
 @Component({
   selector: 'app-root',

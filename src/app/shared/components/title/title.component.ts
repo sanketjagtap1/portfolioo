@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
+import { ButtonComponent } from '../../../shared/components/button/button.component';
 import { NgIf } from '@angular/common';
 
 @Component({
