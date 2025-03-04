@@ -4,5 +4,8 @@
   [class.btnLight]="color !== 'Dark'"
   (click)="handleClick()"
 >
+<span *ngIf="icon != ''" class="material-symbols-outlined">
+  {{icon}}
+  </span>
   {{ label }}
 </button>

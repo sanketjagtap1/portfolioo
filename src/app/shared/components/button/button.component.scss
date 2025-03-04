@@ -2,6 +2,10 @@ button {
     border-radius: 8px;
     padding: 8px 16px;
     border: none;
+    display: flex;
+    font-weight: bolder !important;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1; // Ensures both buttons have the same width and height
     font-size: 14px;
     font-weight: 500; // Consolidated button font styles
@@ -31,4 +35,9 @@ button {
             border: 1px solid rgb(61, 61, 61);
         }
     }
+}
+
+span{
+    font-size: 16px;
+    margin-right: 8px;
 }

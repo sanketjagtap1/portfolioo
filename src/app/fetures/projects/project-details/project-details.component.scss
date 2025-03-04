@@ -1,0 +1,73 @@
+.topSection {
+    padding-bottom: 32px; // Simplified padding
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #888888;
+    margin-top: 16px;
+    width: 80%;
+}
+.detailsSection{
+    padding-bottom: 35px;
+}
+.detailsCard {
+    background-color: #1a1a1a;
+    margin-top: 32px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    display: grid;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-columns: repeat(4, minmax(min-content, max-content)); // Auto width
+    overflow: visible;
+    width: fit-content !important; // Ensures it takes only required width
+    max-width: 100%; // Prevents overflow on smaller screens
+    // margin: 0 auto; // Uncomment if you need it centered
+
+    @media (max-width: 992px) { // Tablets
+        grid-template-columns: repeat(2, minmax(min-content, max-content)); // Show 2 cards per row
+    }
+
+    @media (max-width: 576px) { // Mobile
+        grid-template-columns: repeat(1, minmax(min-content, max-content)); // 1 card per row
+    }
+
+    .card {
+        padding: 0 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+        .bottom{
+            // margin-top: 8px;
+            padding: 3px 0px 8px 0px;
+        }
+    }
+
+    // Apply dashed border to the first 3 cards
+    .card:nth-child(-n+3) {
+        border-right: 1px dashed #3d3d3d;
+    }
+
+
+}
+
+.imageSection{
+    padding: 32px 0px;
+    border-top: 1px dashed #3d3d3d;
+    display: grid;
+    gap: 12px;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+}
+.imageBox{
+    width: 100%;
+    border-radius: 12px;
+    img{
+        border-radius: 12px;
+        width: 100%;
+    }
+}

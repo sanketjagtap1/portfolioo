@@ -13,5 +13,4 @@ export class TitleComponent {
 @Input() color: string='';
 @Input() title: string='';
 @Input() button?: string='';
-
 }

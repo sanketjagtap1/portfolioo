@@ -1,0 +1,45 @@
+<section>
+    <div class="detailsSection">
+        <div class="topSection">
+            <app-button label="All Projects" color="Dark" icon="arrow_back" (onClick)="handleGetInTouch()"></app-button>
+        </div>
+        <div class="title">
+            <app-title label="Live Preview" color="Dark" [title]="data.title" button="Dark"></app-title>
+
+            <p>{{data.description}}</p>
+
+            <div class="detailsCard">
+                <div class="card">
+                    <div class="top">
+                        <p>Year</p>
+                    </div>
+                    <div class="bottom">{{data.year}}</div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <p>Service</p>
+                    </div>
+                    <div class="bottom">{{data.service}}</div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <p>Category</p>
+                    </div>
+                    <div class="bottom">{{data.category}}</div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <p>Tool</p>
+                    </div>
+                    <div class="bottom">{{data.tool}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="imageSection">
+        <div class="imageBox" *ngFor="let image of data.images.gallery">
+            <img [src]="'http://localhost:3000/v1/cloud/file/'+image" alt="">
+        </div>
+    </div>
+</section>
