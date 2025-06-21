@@ -5,7 +5,7 @@ import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
-  imports: [MenusComponent, SocialMediaComponent, NgIf],
+  imports: [MenusComponent, SocialMediaComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

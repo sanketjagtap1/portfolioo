@@ -7,7 +7,7 @@
             </div>
         </div>
 
-        <div class="title" >
+        <div class="title">
             <h1 class="framer-text framer-styles-preset-12k0fqr" data-styles-preset="ejgARf07n"
                 style="--framer-text-alignment: left;">Hey, I'm Sanket.</h1>
             <h1 class="framer-text framer-styles-preset-12k0fqr" data-styles-preset="ejgARf07n"
@@ -21,20 +21,16 @@
         </div>
 
         <div class="btn">
-            <app-button
-            label="Get In Touch"
-            color="Light"
-            ></app-button>
-            <app-button
-            label="About Me"
-            color="Dark"
-            ></app-button>
+            <a class="" routerLink="/contact">
+                <app-button label="Get In Touch" color="Light"></app-button>
+            </a>
+            <a routerLink="/about">
+                <app-button label="About Me" color="Dark"></app-button>
+            </a>
         </div>
     </div>
 
-    <app-recent-component
-    [data]="data"
-    ></app-recent-component>
+    <app-recent-component [data]="data"></app-recent-component>
 
     <app-testimonials></app-testimonials>
     <app-stack></app-stack>

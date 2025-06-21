@@ -1,5 +1,5 @@
 <section>
-    <app-title [label]="data.button" [title]="data.title" [color]="data.color"></app-title>
+    <app-title [label]="data.button" [title]="data.title" [color]="data.color" [route]="data.route"></app-title>
     <div class="cardSection">
         <span *ngFor="let card of cardDetails">
             <app-project-card [data]="card"></app-project-card>

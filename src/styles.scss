@@ -14,24 +14,28 @@
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'GeneralSans';
     src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Semibold.ttf') format('truetype');
     font-weight: bolder;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'GeneralSans';
     src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Regular.ttf') format('truetype');
     font-weight: 200;
     font-style: regular;
 }
+
 @font-face {
     font-family: 'GeneralSans';
     src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Medium.ttf') format('truetype');
     font-weight: 400;
     font-style: medium;
 }
+
 @font-face {
     font-family: 'GeneralSans';
     src: url('../public/assets/Fonts/WEB/fonts/GeneralSans-Light.ttf') format('truetype');
@@ -39,24 +43,32 @@
     font-style: light;
 }
 
-  
-  /* Reset and global styles */
-  * {
+
+/* Reset and global styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'GeneralSans', sans-serif;
-  }
-  
-  /* Body-specific global styles */
-  body {
-    color: #ffffff; /* Set text color to white for dark background */
-    line-height: 1.5; /* Add better readability */
-        font-size: 14px;
-        font-weight: 300;
-        margin: 0; /* Reset margin for better consistency */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Body-specific global styles */
+body {
+    color: #ffffff;
+    /* Set text color to white for dark background */
+    line-height: 1.5;
+    /* Add better readability */
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    /* Reset margin for better consistency */
     background: #121212;
-
-  }
-  
-
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

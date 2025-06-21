@@ -1,23 +1,25 @@
 <section>
     <div class="top">
         <div class="profile">
-        <div class="left">
-            <img decoding="async"
-                src="https://framerusercontent.com/images/ujCLih4cez7IcLTUCq3voRvZblE.jpg?scale-down-to=512"
-                alt="Profile Image">
+            <div class="left">
+                <img decoding="async"
+                    src="https://framerusercontent.com/images/ujCLih4cez7IcLTUCq3voRvZblE.jpg?scale-down-to=512"
+                    alt="Profile Image" />
+            </div>
+            <div class="right">
+                <h3>Sanket</h3>
+                <p>Software Engineer</p>
+            </div>
         </div>
-        <div class="right">
-            <h3>Sanket</h3>
-            <p>Software Engineer</p>
-        </div>
-    </div>
+
         <button class="hamburger-btn" (click)="toggleMenu()">&#9776;</button>
     </div>
-    <div class="menus" *ngIf="isMenuVisible">
+
+    <!-- 👇 Use class toggle instead of *ngIf -->
+    <div class="menus" [class.show]="isMenuVisible">
         <app-menus></app-menus>
         <div class="social">
             <app-social-media></app-social-media>
         </div>
     </div>
-
 </section>
